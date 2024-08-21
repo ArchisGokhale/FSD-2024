@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <h2>Flight Booking Management System</h2>
+    <form id="bookingForm" action="flight_booking.php" method="POST" onsubmit="return validateForm()">
+        <label for="name">Passenger Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required><br><br>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required><br><br>
+
+        <label for="departure_date">Departure Date:</label>
+        <input type="date" id="departure_date" name="departure_date" required><br><br>
+
+        <label for="arrival_date">Arrival Date:</label>
+        <input type="date" id="arrival_date" name="arrival_date" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" name="action" value="Insert">
+        <input type="submit" name="action" value="Delete">
+        <input type="submit" name="action" value="Update">
+        <input type="submit" name="action" value="View">
+    </form>
+</body>
+</html>

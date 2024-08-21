@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <div id="output" class="output"></div>
+        <button id="boldTextButton">Change Text to Bold and Size 20</button>
+        <button id="changeImageButton">Change Image Source</button>
+        <button id="changeBackgroundButton">Change Background</button>
+        <tag1>Hello this is tag 1</tag1>
+        <tag2>Hello this is tag 2</tag2>
+        <p>This should disappear on click</p>
+        <div id="imageContainer">
+            <img id="image" src="panda.jpeg" alt="Panda">
+        </div>
+        <button id="btn1">Show RGB Color</button>
+        <button id="btn2">Add List Item</button>
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
