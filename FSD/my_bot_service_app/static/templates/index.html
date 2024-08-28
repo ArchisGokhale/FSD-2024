@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Service App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bot Service App</h1>
+        <div>
+            <input type="text" id="username" placeholder="Enter your name">
+            <input type="text" id="messageText" placeholder="Enter your message">
+            <button onclick="postMessage()">Post Message</button>
+        </div>
+        <div id="posts">
+            {% for post in posts %}
+                <div class="post">
+                    <p><strong>{{ post.user }}</strong>: {{ post.message }}</p>
+                    <button onclick="likeMessage({{ loop.index0 }})">Like</button>
+                    <span>Likes: {{ post.likes or 0 }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
